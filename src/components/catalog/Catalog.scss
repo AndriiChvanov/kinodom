@@ -1,0 +1,44 @@
+.catalog {
+	padding-top: 150px;
+	&__container {
+		display: flex;
+	}
+
+	&__genres {
+		h1 {
+			font-family: "Gotham Pro Black";
+			font-size: 50px;
+			line-height: 110%;
+			color: #ffffff;
+		}
+		h2 {
+			cursor: pointer;
+			margin-top: 40px;
+			font-family: "Gotham Pro Black";
+			font-size: 30px;
+			line-height: 116.2%;
+			background: linear-gradient(90deg, #ff2828 0%, #ac061f 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+		p {
+			margin-top: 30px;
+			margin-bottom: 20px;
+			font-family: "Gotham Pro Black";
+			font-size: 24px;
+			line-height: 116.2%;
+			color: #ffffff;
+		}
+		li {
+			cursor: pointer;           
+			font-family: "Gotham Pro Medium";
+			font-size: 18px;
+			line-height: 200%;
+			color: #ffffff;
+			list-style: none;
+			span {
+				opacity: 0.6;
+			}
+		}
+	}
+}

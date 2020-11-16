@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+}
+html {
+	scroll-behavior: smooth;
+}
+@media( max-width: 1441px){
+	#root{
+		max-width: 1440px;
+		overflow: hidden;
+		
+	}
+	
+}
+@media (min-width: 1442px) {
+	.container{
+		margin: 0 calc(50vw - 623px)
+	}
+}
+@font-face {
+	font-family: "Gotham Pro Bold";
+	src: url(./fonts/GothamPro-Bold.ttf) format("woff");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Gotham Pro Light";
+	src: url(./fonts/GothamPro-Light.ttf) format("woff");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Gotham Pro Black";
+	src: url(./fonts/GothamPro-Black.ttf) format("woff");
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Gotham Pro Medium";
+	src: url(./fonts/GothamPro-Medium.ttf) format("woff");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Gotham Pro";
+	src: url(./fonts/GothamPro.ttf) format("woff");
+	font-weight: normal;
+	font-style: normal;
+}

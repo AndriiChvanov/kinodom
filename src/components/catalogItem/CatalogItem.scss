@@ -1,0 +1,122 @@
+.catalog {
+	&__items {
+		padding-top: 100px;
+		margin-left: 30px;
+	}
+
+	&__items-filter {
+		.active{
+			opacity: 1;
+		}
+		display: flex;
+		h2 {
+			font-family: "Gotham Pro Bold";
+			font-size: 20px;
+			line-height: 116.2%;
+			color: #ffffff;
+			margin-right: 30px;
+		}
+		b {
+			cursor: pointer;
+			margin-top: 3px;
+			margin-left: 30px;
+			font-family: "Gotham Pro";
+			font-size: 18px;
+			line-height: 116.2%;
+			color: #ffffff;
+			opacity: 0.7;
+		}
+	}
+	&__items-content {
+		display: grid;
+		grid-template-columns: 240px 240px 240px 240px;
+		grid-column-gap: 10px;
+		grid-row-gap: 20px;
+	}
+	&__items-pagination {
+		padding-top: 65px;
+		display: flex;
+		margin-left: auto;
+		float: right;
+		align-items: center;
+		height: 40px;
+		li {
+			padding-top: 15px;
+			width: 40px;
+			height: 40px;
+			cursor: pointer;
+			font-family: "Gotham Pro";
+			text-align: center;
+			list-style: none;
+			font-size: 18px;
+			color: #ffffff;
+		}
+		.active {
+			padding-top: 12px;
+			font-weight: 900;
+			font-size: 24px;
+			background: linear-gradient(90deg, #ff2828 0%, #ac061f 100%);
+			border-radius: 5px;
+		}
+	}
+	&__items-sort {
+		margin-top: 30px;
+		width: 240px;
+		height: 100%;
+		margin-right: 10px;
+		background: #660d10;
+		border-radius: 4px 4px 10px 10px;
+		
+		&:hover {
+			background: linear-gradient(90deg, #ff2828 0%, #ac061f 100%);
+			border-radius: 4px 4px 10px 10px;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+		img {
+			padding: 5px;
+			width: 230px;
+			height: 338px;
+			border-radius: 4px 4px 10px 10px;
+		}
+		h2 {
+			word-wrap: break-word;
+			padding: 0 30px;
+			padding-top: 30px;
+			font-family: "Gotham Pro Bold";
+			font-size: 20px;
+			color: #ffffff;
+			line-height: 160%;
+		}
+		h3 {
+			word-wrap: break-word;
+			padding: 0 30px;
+			font-family: "Gotham Pro";
+			margin-top: 20px;
+			font-size: 16px;
+			line-height: 145%;
+			color: #ffffff;
+			opacity: 0.7;
+		}
+		p {
+			font-family: "Gotham Pro bold";
+			font-size: 20px;
+			line-height: 145%;
+			color: #ffffff;
+			margin-top: 15px;
+			padding-left: 30px;
+		}
+		span {
+			margin-top: 15px;
+			font-family: "Gotham Pro";
+			font-size: 20px;
+			line-height: 145%;
+			color: #ffffff;
+			img {
+				width: 12px;
+				height: 12px;
+			}
+		}
+	}
+}
