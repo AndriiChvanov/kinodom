@@ -15,7 +15,6 @@ class Catalog extends Component {
 	
 	render() {
 		const { genres, filmListId } = this.props;
-		
 		function cfl(string) {
 			return string.charAt(0).toUpperCase() + string.slice(1);
 		}

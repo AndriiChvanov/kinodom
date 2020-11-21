@@ -1,7 +1,12 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import WithKinodomService from "../hoc";
-import { filmSearch, filmRequested, filmSearchValue } from "../../actions";
+import {
+	filmSearch,
+	filmRequested,
+	filmSearchValue,
+	filmList,
+} from "../../actions";
 import { Link } from "react-scroll";
 
 import "./Nav.scss";
@@ -20,6 +25,21 @@ class Nav extends Component {
 				.then(this.props.filmSearchValue(value));
 		}
 	};
+	toReleases = (e) => {
+		e.preventDefault();
+		const { KinodomService, num } = this.props;
+		KinodomService.getToReleases(num).then((res) => this.props.filmList(res));
+	};
+	toChild = (e) => {
+		e.preventDefault();
+		const { KinodomService, num } = this.props;
+		KinodomService.getToChild(num).then((res) => this.props.filmList(res));
+	};
+	toSerial = (e) => {
+		e.preventDefault();
+		const { KinodomService, num } = this.props;
+		KinodomService.getToSerial(num).then((res) => this.props.filmList(res));
+	};
 	render() {
 		return (
 			<div className='nav'>
@@ -30,10 +50,18 @@ class Nav extends Component {
 						</Link>
 					</div>
 					<ul className='nav__menu'>
-						<li>Премьеры</li>
-						<li>Фильмы</li>
-						<li>Сериалы</li>
-						<li>Детям</li>
+						<Link to='catalog__filter'>
+							<li onClick={(e) => this.toReleases(e)}>Премьеры</li>
+						</Link>
+						<Link to='catalog__filter'>
+							<li>Фильмы</li>
+						</Link>
+						<Link to='catalog__filter'>
+							<li onClick={(e) => this.toSerial(e)}>Сериалы</li>
+						</Link>
+						<Link to='catalog__filter'>
+							<li onClick={(e) => this.toChild(e)}>Детям</li>
+						</Link>
 					</ul>
 					<div className='nav__search'>
 						<img src={search} alt='Поиск' />
@@ -66,7 +94,7 @@ const mapStateToProps = ({ value, num, searchObj }) => {
 const mapDispatchToProps = {
 	filmSearch: filmSearch,
 	filmSearchValue: filmSearchValue,
-
+	filmList:filmList,
 	filmRequested,
 };
 export default WithKinodomService()(

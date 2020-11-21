@@ -5,6 +5,9 @@
 	width: 100%;
 	position: fixed;
 	background: #0A0500;
+	&__logo{
+		cursor: pointer;
+	}
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
@@ -26,7 +29,7 @@
 			}
 			&:hover {
 				background: linear-gradient(90deg, #ff2828 0%, #ac061f 100%);
-				-webkit-background-clip: text;
+				background-clip: text;
 				-webkit-text-fill-color: transparent;
 			}
 		}

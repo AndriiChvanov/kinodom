@@ -51,7 +51,14 @@ const filmSearchValue = (value) => {
 		type: "FILM_SEARCH_I",
 		payload: value,
 	};
-}
+};
+const isActive = (a) => {
+	return {
+		type: "IS_ACTIVE",
+		payload: a
+		
+	};
+};
 export {
 	filmUpcoming,
 	filmGenres,
@@ -62,4 +69,5 @@ export {
 	liActive,
 	filmSearch,
 	filmSearchValue,
+	isActive,
 };

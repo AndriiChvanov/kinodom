@@ -94,12 +94,12 @@
 			font-size: 18px;
 			line-height: 116.2%;
 			background: linear-gradient(90deg, #ff2828 0%, #ac061f 100%);
-			-webkit-background-clip: text;
+			background-clip: text;
 			-webkit-text-fill-color: transparent;
 			span {
 				font-family: "Gotham Pro";
 				background: #000000;
-				-webkit-background-clip: text;
+				background-clip: text;
 				-webkit-text-fill-color: transparent;
 				color: #000000;
 				opacity: 0.7;
@@ -120,38 +120,6 @@
 			margin-right: 0;
 		}
 		
-		.active {
-			margin-top: -310px;
-			padding-top: 290px;
-			background: none;
-			width: 302px;
-			height: 320px;
-			background-image: url("../../icons/Component 2.png");
-			background-repeat: no-repeat;
-			transition: 0.3s;
-			transform: scale(1.1);
-
-			img {
-				width: 40px;
-				height: 40px;
-				content: url("../../icons/pluH.png");
-				background-repeat: no-repeat;
-			}
-			p {
-				padding-left: 50px;
-				margin-top: 20px;
-				font-size: 28px;
-				span {
-					font-size: 24px;
-				}
-			}
-			h2{
-				padding-top: 60px;
-				padding-left: 50px;
-			}
-			h3{
-				padding-left: 50px;
-			}
-		}
+		
 	}
 }

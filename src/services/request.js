@@ -46,4 +46,23 @@ export default class KinodomService {
 		);
 		return res.films;
 	}
+	async getToChild(num) {
+		const res = await this.getResource(
+			`/v2.1/films/search-by-filters?genre=14&genre=10&order=RATING&type=FILM&yearFrom=2010&page=${num}`
+		);
+		return res.films;
+	}
+	
+	async getToReleases(num) {
+		const res = await this.getResource(
+			`/v2.1/films/releases?year=2020&month=NOVEMBER&page=${num}`
+		);
+		return res.releases;
+	}
+	async getToSerial(num) {
+		const res = await this.getResource(
+			`/v2.1/films/search-by-keyword?keyword=%28%D1%81%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%29&page=${num}`
+		);
+		return res.films;
+	}
 }

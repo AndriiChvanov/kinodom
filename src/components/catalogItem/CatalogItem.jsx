@@ -25,23 +25,23 @@ class CatalogItem extends Component {
 			);
 		}
 	}
-	activeBtn = (e)  =>{
+	activeBtn = (e) => {
 		let id = e.target.getAttribute("data-id");
 		this.props.liActive(id);
 		this.props.filmNum(id);
-	}
+	};
 	topRated = () => {
 		const { KinodomService, itemsId, num } = this.props;
 		KinodomService.getTopRated(itemsId, num).then((res) =>
 			this.props.filmList(res)
 		);
-	}
+	};
 	yearRated = () => {
 		const { KinodomService, itemsId, num } = this.props;
 		KinodomService.getToYear(itemsId, num).then((res) =>
 			this.props.filmList(res)
 		);
-	}
+	};
 	render() {
 		const { items, li, searchObj } = this.props;
 		const mov = items.map((movie) => {
