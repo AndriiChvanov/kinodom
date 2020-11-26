@@ -26,8 +26,8 @@ class Price extends Component {
 				<div className='container'>
 					<div className='price__container'>
 						<div className='price__title'>
-							<h1>Тарифы</h1>
-							<p>
+							<h1 className='title-h1 price__title-h1'>Тарифы</h1>
+							<p className='title-p price__title-p'>
 								Наша компания представляет ширую линейку тарифов, чтобы каждый
 								мог подобрать для себя мксимально подходящий
 							</p>

@@ -1,0 +1,188 @@
+.button {
+	min-width: 260px;
+	min-height: 58px;
+	padding: 0 20px;
+	border: none;
+	outline: none;
+	background: linear-gradient(90deg, #ff2828 0%, #ac061f 100%);
+	font-size: 18px;
+	line-height: 17px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	font-family: "Gotham Pro Bold";
+	color: #ffffff;
+	cursor: pointer;
+	&:hover {
+		background: linear-gradient(180deg, #ff2828 20%, #ac061f 100%);
+	}
+	.button-img {
+		margin-left: 12px;
+	}
+}
+//HEADER
+.text-h2 {
+	padding: 0 35px;
+	font-family: "Gotham Pro Black";
+	font-size: 24px;
+	line-height: 33px;
+	text-align: center;
+	background: linear-gradient(90deg, #ff2828 0%, #ac061f 100%);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: #ff2828;
+}
+.text-p {
+	padding: 0 35px;
+	font-family: "Gotham Pro";
+	font-size: 16px;
+	line-height: 149.55%;
+	text-align: center;
+	color: #010101;
+	opacity: 0.7;
+}
+.info-h2 {
+	font-family: "Gotham Pro";
+	font-size: 24px;
+	line-height: 23px;
+	color: #ffffff;
+}
+.info-p {
+	font-family: "Gotham Pro";
+	font-size: 16px;
+	line-height: 160%;
+	color: #ffffff;
+	opacity: 0.7;
+}
+//HEADER
+
+//NAV
+.menu-li {
+	color: #fff;
+	font-size: 18px;
+	line-height: 17px;
+	font-family: "Gotham Pro";
+}
+
+//NAV
+//NEWMOVIES
+.img-h2 {
+	font-family: "Gotham Pro Bold";
+	font-size: 18px;
+	line-height: 20px;
+	background: linear-gradient(90deg, #ff2828 0%, #ac061f 100%);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	border-bottom: 2px solid;
+	border-image-source: linear-gradient(90deg, #ff2828 0%, #ac061f 100%);
+	border-image-slice: 1;
+	cursor: pointer;
+}
+.title-h1 {
+	font-family: "Gotham Pro Black";
+	font-size: 50px;
+	line-height: 110%;
+	color: #ffffff;
+}
+.title-h2 {
+	font-family: "Gotham Pro Bold";
+	font-size: 20px;
+	line-height: 19px;
+	color: #ffffff;
+}
+.title-p {
+	font-family: "Gotham Pro";
+	font-size: 18px;
+	line-height: 160%;
+	color: #ffffff;
+	opacity: 0.7;
+}
+.slide-arr {
+	cursor: pointer;
+	width: 29px;
+	height: 54px;
+}
+.item-img {
+	padding: 5px;
+	width: 230px;
+	height: 338px;
+	border-radius: 4px 4px 10px 10px;
+}
+.item-h2 {
+	word-wrap: break-word;
+	font-family: "Gotham Pro Bold";
+	font-size: 20px;
+	line-height: 25px;
+	color: #ffffff;
+}
+.item-h3 {
+	word-wrap: break-word;
+	font-family: "Gotham Pro";
+	margin-top: 20px;
+	font-size: 16px;
+	line-height: 145%;
+	color: #ffffff;
+	opacity: 0.7;
+}
+.item-p {
+	word-wrap: break-word;
+	font-family: "Gotham Pro bold";
+	font-size: 20px;
+	line-height: 145%;
+	color: #ffffff;
+	margin-top: 15px;
+	padding-left: 30px;
+	margin-bottom: 20px;
+}
+.item-span {
+	margin-top: 15px;
+	font-family: "Gotham Pro";
+	font-size: 20px;
+	line-height: 145%;
+	color: #ffffff;
+	img {
+		width: 12px;
+		height: 12px;
+	}
+}
+.item-slide {
+	cursor: pointer;
+	min-width: 240px;
+	min-height: calc(100%);
+	margin-right: 10px;
+	background: #660d10;
+	border-radius: 4px 4px 10px 10px;
+	&:hover {
+		background: linear-gradient(90deg, #ff2828 0%, #ac061f 100%);
+		border-radius: 4px 4px 10px 10px;
+	}
+	&:last-child {
+		margin-right: 0;
+	}
+}
+//NEWMOVIES
+//PROMO
+.free-h2 {
+	font-family: "Gotham Pro Bold";
+	font-size: 24px;
+	line-height: 28px;
+	color: #ffffff;
+}
+.free-p {
+	font-family: "Gotham Pro";
+	font-size: 16px;
+	line-height: 160%;
+	color: #ffffff;
+	opacity: 0.7;
+}
+//PROMO
+//footer
+.foot-li{
+	
+			font-family: "Gotham Pro";
+			font-size: 14px;
+			line-height: 140%;
+			color: #ffffff;
+			opacity: 0.7;
+}
+//footer

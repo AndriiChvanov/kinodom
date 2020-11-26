@@ -1,6 +1,4 @@
 .promo {
-	&__container {
-	}
 
 	&__info {
 		display: flex;
@@ -8,83 +6,46 @@
 
 	&__info-title {
 		padding-top: 150px;
-		h1 {
-			font-family: "Gotham Pro Black";
-			font-size: 50px;
-			line-height: 110%;
-			color: #ffffff;
-		}
-		p {
+		&-p {
 			margin-top: 30px;
-			font-family: "Gotham Pro Medium";
-			font-size: 18px;
-			line-height: 160%;
-			color: #ffffff;
-			opacity: 0.7;
 		}
 	}
 
-	&__info-img {
-	}
-
-	&__btn {
+	&__free{
 		display: flex;
-	}
 
-	&__btn-free {
+	}
+	&__free-img{
+		width: 125px;
+		height: 153px;
+	}
+	&__free-one {
 		display: flex;
-		img{
-			width: 125px;
-			height: 153px;
-		}
+		
 	}
 
-	&__btn-free-info {
+	&__free-info {
 		padding-top: 30px;
 		margin-left: 25px;
-		h2 {
-			font-family: "Gotham Pro Bold";
-			font-size: 24px;
-			line-height: 28px;
-			color: #ffffff;
-		}
-		p {
+		&-p {
 			margin-top: 15px;
-			font-family: "Gotham Pro";
-			font-size: 16px;
-			line-height: 160%;
-			color: #ffffff;
-			opacity: 0.7;
-		}
-		button {
-			margin-top: 35px;
-			width: 280px;
-			height: 56px;
-			background: linear-gradient(90deg, #ff2828 0%, #ac061f 100%);
-			outline: none;
-			border: none;
-			font-size: 18px;
-			line-height: 17px;
-			font-family: "Gotham Pro Bold";
-			display: flex;
-			padding-left: 50px;
-			align-items: center;
-			text-align: center;
-			color: #ffffff;
-			img{
-				padding-left: 40px;
-				width: 10.15px;
-				height: 11px;
-			}
+			
 		}
 	}
+	button{
+		margin-top: 35px;
+		padding-left: 50px;
+		min-width: 280px;
+		min-height: 56px;
+		
+	}
+	.button-img {
+		padding-left: 40px;
 
-	&__btn-promo {
+	}
+	&__free-promo {
 		margin-left: 53px;
 		display: flex;
-		img{
-			width: 125px;
-			height: 153px;
-		}
+		
 	}
 }

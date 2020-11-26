@@ -1,6 +1,6 @@
 .footer {
 	background: #46090b;
-	height: 283px;
+	min-height: 283px;
 	&__container {
 		display: flex;
 		justify-content: space-between;
@@ -10,13 +10,9 @@
 	&__logo {
 		padding-top: 30px;
 		display: inline-table;
-		p {
+		.foot-li {
 			margin-top: 15px;
-			font-family: "Gotham Pro";
-			font-size: 14px;
 			line-height: 160%;
-			color: #ffffff;
-			opacity: 0.7;
 			&:nth-child(3) {
 				margin-top: 85px;
 			}
@@ -25,12 +21,8 @@
 
 	&__nav {
 		padding-top: 84px;
-		li {
+		.menu-li {
 			cursor: pointer;
-			font-family: "Gotham Pro Medium";
-			font-size: 18px;
-			line-height: 17px;
-			color: #ffffff;
 			padding-top: 20px;
 			&:nth-child(1) {
 				padding-top: 0;
@@ -40,14 +32,10 @@
 
 	&__help {
 		padding-top: 84px;
-		li {
+		.foot-li {
 			cursor: pointer;
 			padding-top: 15px;
-			font-family: "Gotham Pro";
-			font-size: 14px;
-			line-height: 140%;
-			color: #ffffff;
-			opacity: 0.7;
+
 			&:nth-child(1) {
 				padding-top: 0;
 			}
@@ -57,25 +45,18 @@
 	&__info {
 		padding-top: 84px;
 		text-align: right;
-		span {
+		&-span {
 			font-family: "Gotham Pro";
 			font-size: 20px;
 			line-height: 110%;
 			color: #ffffff;
 		}
-		h2 {
+		&-h2 {
 			padding-top: 20px;
 			font-family: "Gotham Pro Medium";
 			font-size: 20px;
 			line-height: 110%;
 			color: #ffffff;
-		}
-		p {
-			font-size: 14px;
-			line-height: 140%;
-			color: #ffffff;
-			font-family: "Gotham Pro";
-			opacity: 0.7;
 		}
 	}
 }

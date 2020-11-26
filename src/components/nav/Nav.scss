@@ -1,6 +1,6 @@
 .nav {
 	padding-top: 27px;
-	height: 70px;
+	min-height: 70px;
 	z-index: 100;
 	width: 100%;
 	position: fixed;
@@ -11,16 +11,11 @@
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
-		margin: 0 100px;
 	}
 	&__menu {
 		padding-top: 10px;
 		display: flex;
-		color: #fff;
-		font-size: 18px;
-		line-height: 17px;
-		font-family: "Gotham Pro";
-		li {
+		&-li {
 			cursor: pointer;
 			list-style: none;
 			padding-right: 53px;
@@ -50,7 +45,7 @@
 			background: transparent;
 			border: none;
 			opacity: 0.5;
-			width: 114px;
+			min-width: 114px;
 			border-bottom: 1px solid #fff;
 			outline-style: none;
 			outline: none;
@@ -71,9 +66,5 @@
 			margin-right: 15px;
 		}
 		padding-top: 10px;
-		font-size: 18px;
-		line-height: 17px;
-		font-family: "Gotham Pro";
-		color: #ffffff;
 	}
 }

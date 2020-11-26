@@ -8,15 +8,15 @@
 	}
 
 	&__content {
-		width: 656px;
-		h1 {
+		min-width: 656px;
+		&-h1{
 			font-family: "Gotham Pro Black";
 			font-size: 70px;
 			line-height: 110%;
 			color: #ffffff;
 		}
-		p {
-			width: 420px;
+		&-p {
+			min-width: 420px;
 			margin-top: 40px;
 			font-family: "Gotham Pro";
 			font-size: 18px;
@@ -26,26 +26,7 @@
 	}
 
 	&__btn {
-		img {
-			margin-left: 12px;
-		}
-		padding: 0 20px;
 		margin-top: 50px;
-		width: 260px;
-		height: 58px;
-		border: none;
-		outline: none;
-		background: linear-gradient(90deg, #ff2828 0%, #ac061f 100%);
-		font-size: 18px;
-		line-height: 17px;
-		display: flex;
-		align-items: center;
-		text-align: center;
-		font-family: "Gotham Pro Bold";
-		color: #ffffff;
-		&:hover {
-			background: linear-gradient(180deg, #ff2828 20%, #ac061f 100%);
-		}
 	}
 
 	&__promo {
@@ -57,35 +38,19 @@
 
 	&__promo-sale {
 		background: url("../../image/promo.png") no-repeat;
-		width: 263px;
-		height: 239px;
+		min-width: 263px;
+		min-height: 239px;
 		object-fit: contain;
 		margin-right: 30px;
 
 		&:nth-child(2) {
 			margin-right: 0;
 		}
-		h2 {
-			padding: 0 35px;
+		&-h2 {
 			margin-top: 60px;
-			font-family: "Gotham Pro Black";
-			font-size: 24px;
-			line-height: 33px;
-			text-align: center;
-			background: linear-gradient(90deg, #ff2828 0%, #ac061f 100%);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			color: #ff2828;
 		}
-		p {
-			padding: 0 35px;
+		&-p {
 			margin-top: 15px;
-			font-family: "Gotham Pro";
-			font-size: 16px;
-			line-height: 149.55%;
-			text-align: center;
-			color: #010101;
-			opacity: 0.7;
 		}
 	}
 
@@ -100,21 +65,14 @@
 		&:nth-child(3) {
 			margin-right: 0;
 		}
-		width: 314px;
-		h2 {
+		min-width: 314px;
+		&-h2 {
 			margin-top: 25px;
-			font-family: "Gotham Pro";
-			font-size: 24px;
-			line-height: 23px;
-			color: #ffffff;
+			
 		}
-		p {
+		&-p {
 			margin-top: 20px;
-			font-family: "Gotham Pro";
-			font-size: 16px;
-			line-height: 160%;
-			color: #ffffff;
-			opacity: 0.7;
+			
 		}
 	}
 }

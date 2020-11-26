@@ -46,17 +46,21 @@ class CatalogItem extends Component {
 		const { items, li, searchObj } = this.props;
 		const mov = items.map((movie) => {
 			return (
-				<div className='catalog__items-sort' key={movie.filmId}>
-					<img src={movie.posterUrlPreview} alt={movie.nameRu} />
-					<h2>{movie.nameRu}</h2>
-					<h3>
+				<div className='catalog__items-sort  item-slide' key={movie.filmId}>
+					<img
+						className='item-img catalog__items-sort-img '
+						src={movie.posterUrlPreview}
+						alt={movie.nameRu}
+					/>
+					<h2 className='item-h2 catalog__items-sort-h2'>{movie.nameRu}</h2>
+					<h3 className='item-h3 catalog__items-sort-h3'>
 						{movie.genres[0] ? `${movie.genres[0].genre} ` : ""}
 						{movie.genres[1] ? `${movie.genres[1].genre} ` : ""} <br />
 						{movie.genres[2] ? ` ${movie.genres[2].genre}` : ""}
 					</h3>
-					<p>
+					<p className='item-p catalog__items-sort-p'>
 						{movie.rating}
-						<span>
+						<span className='item-span catalog__items-sort-span'>
 							<img src={star} alt='star' />
 						</span>
 					</p>
@@ -65,17 +69,21 @@ class CatalogItem extends Component {
 		});
 		const movFilter = searchObj.map((movie) => {
 			return (
-				<div className='catalog__items-sort' key={movie.filmId}>
-					<img src={movie.posterUrlPreview} alt={movie.nameRu} />
-					<h2>{movie.nameRu}</h2>
-					<h3>
+				<div className='catalog__items-sort  item-slide' key={movie.filmId}>
+					<img
+						className='item-img catalog__items-sort-img'
+						src={movie.posterUrlPreview}
+						alt={movie.nameRu}
+					/>
+					<h2 className='catalog__items-sort-h2 item-h2 '>{movie.nameRu}</h2>
+					<h3 className='catalog__items-sort-h3 item-h3 '>
 						{movie.genres[0] ? `${movie.genres[0].genre} ` : ""}
 						{movie.genres[1] ? `${movie.genres[1].genre} ` : ""} <br />
 						{movie.genres[2] ? ` ${movie.genres[2].genre}` : ""}
 					</h3>
-					<p>
+					<p className='catalog__items-sort-p item-p'>
 						{movie.rating}
-						<span>
+						<span className='catalog__items-sort-span item-span '>
 							<img src={star} alt='star' />
 						</span>
 					</p>

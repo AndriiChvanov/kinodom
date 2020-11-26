@@ -43,39 +43,50 @@ class Nav extends Component {
 	render() {
 		return (
 			<div className='nav'>
-				<div className='nav__wrapper'>
-					<div className='nav__logo'>
-						<Link to='main'>
-							<img src={logo} alt='КиноДом' />
-						</Link>
-					</div>
-					<ul className='nav__menu'>
-						<Link to='catalog__filter'>
-							<li onClick={(e) => this.toReleases(e)}>Премьеры</li>
-						</Link>
-						<Link to='catalog__filter'>
-							<li>Фильмы</li>
-						</Link>
-						<Link to='catalog__filter'>
-							<li onClick={(e) => this.toSerial(e)}>Сериалы</li>
-						</Link>
-						<Link to='catalog__filter'>
-							<li onClick={(e) => this.toChild(e)}>Детям</li>
-						</Link>
-					</ul>
-					<div className='nav__search'>
-						<img src={search} alt='Поиск' />
-						<form action=''>
-							<Link to='catalog__filter'>
-								<input
-									type='search'
-									placeholder='Поиск'
-									onKeyPress={(e) => this.searchValue(e, e.target.value)}
-								/>
+				<div className='container'>
+					<div className='nav__wrapper'>
+						<div className='nav__logo'>
+							<Link to='main'>
+								<img src={logo} alt='КиноДом' />
 							</Link>
-						</form>
-						<img src={login} alt='Логин' />
-						Войти
+						</div>
+						<ul className='nav__menu menu-li'>
+							<Link to='catalog__filter'>
+								<li
+									className='nav__menu-li'
+									onClick={(e) => this.toReleases(e)}>
+									Премьеры
+								</li>
+							</Link>
+							<Link to='catalog__filter'>
+								<li className='nav__menu-li'>Фильмы</li>
+							</Link>
+							<Link to='catalog__filter'>
+								<li className='nav__menu-li' onClick={(e) => this.toSerial(e)}>
+									Сериалы
+								</li>
+							</Link>
+							<Link to='catalog__filter'>
+								<li className='nav__menu-li' onClick={(e) => this.toChild(e)}>
+									Детям
+								</li>
+							</Link>
+						</ul>
+						<div className='nav__search menu-li'>
+							<img src={search} alt='Поиск' />
+							<form action=''>
+								<Link to='catalog__filter'>
+									<input
+										
+										type='search'
+										placeholder='Поиск'
+										onKeyPress={(e) => this.searchValue(e, e.target.value)}
+									/>
+								</Link>
+							</form>
+							<img src={login} alt='Логин' />
+							Войти
+						</div>
 					</div>
 				</div>
 			</div>
